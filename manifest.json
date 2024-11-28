@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Uganda Constitution Daily",
+  "version": "1.0",
+  "description": "Shows a daily article from the Ugandan constitution",
+  "permissions": ["storage", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "uganda48_48.png",
+    "128": "uganda128_128.png"
+  }
+}

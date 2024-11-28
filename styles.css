@@ -1,0 +1,68 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.whole{
+  padding: 4px;
+  margin: auto;
+}
+
+body {
+    width: 300px;
+    padding: 16px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: start;
+    margin-left: 4%;
+    font-weight: 600;
+    z-index: 2;
+    position: absolute; /* Position it absolutely within the .topper */
+  }
+  
+  h2 {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .button{
+    color: white;
+    width: 100%;
+    padding: 12px;
+    background-color: #6c59fe;
+    border-radius: 24px;
+    border: none;
+  }
+  .button:hover {
+    background-color: #6c59fe9c;
+  }
+ 
+  .topper {
+    position: relative; /* Set the parent container to relative positioning */
+    width: 100%;
+    height: 100px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.topper::before {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position it absolutely within the .topper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #2777bdc5, rgba(255, 255, 255, 0));
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+img {
+  object-position: center; /* this will position the image at the center of the container */
+  object-fit: cover; /* this will crop and scale the image to fill the container */
+}
